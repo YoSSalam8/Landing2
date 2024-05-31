@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--FirstFont);
-    height: 4000px;
+    
 }
 
 
@@ -92,7 +92,461 @@ ul {
     color: #fff;
 }
 
+.bars-menu{
+    display: none;
+}
+
+
+@media(max-width:990px) {
+    .nav {
+        display: none;
+    }
+
+    .bars-menu{
+        display: inline-block;
+         
+    }
+
+    .login{
+        display: none;
+    }
+
+    
+}
+
+@media(max-width:400px){
+    
+    .logo a{
+        display: none;
+    }
+}
+
+
 /*end header*/
+
+
+
+
+/*start Introduction*/
+
+.introduction .container {
+    width: calc(100% - 120px);
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.introduction .container .title h4{
+    color: #545BE8;
+    font-weight: 500;
+    font-size: 18px;
+}
+.introduction .container .title h4 span{
+    font-weight: bolder;
+}
+
+.introduction .container .title h1{
+    font-size: 60px;
+    color: #141E32;
+}
+.introduction .container .title h1 span{
+    color: #545BE8;
+}
+.introduction_bottom .photo{
+    padding-right: 50px;
+    z-index: 1;
+}
+.introduction_bottom .photo img {
+    width:520px;
+    height: 520px;
+}
+
+.introduction .feature-section{
+    background-color: #F5F5F5;
+    width: calc(100% - 120px);
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    padding-top: 200px;
+
+}
+
+.introduction .upper-part{
+    background-color: #F5F5F5;
+    width: calc(100% - 120px);
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 60px;
+    
+}
+
+.introduction .upper-part .paragraph{
+    color: #969696;
+}
+
+.introduction .upper-part .login{
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.introduction .upper-part .login a {
+    font-family: var(--SecondFont);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+.introduction .upper-part .login a:first-of-type {
+    
+    background-color: var(--MainColor);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.introduction .upper-part .login a:last-of-type {
+    
+    color: var(--FirstFont);
+    
+}
+
+.introduction .upper-part .login svg {
+    
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    
+}
+
+.introduction .feature-section .features_text{
+   padding-left: 30px;
+   padding-bottom: 100px;
+}
+
+
+
+.introduction .feature-section .features_text h4{
+    color: #545BE8;
+    font-weight: 400;
+}
+
+.introduction .feature-section .features_text h2{
+    color: #141E32;
+    font-size: 40px;
+}
+.introduction .feature-section .features_text p{
+    color: #969696;
+    
+}
+
+.introduction .feature-section .feature-card{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--MainColor);
+    color: #fff;
+
+}
+
+.introduction .feature-section .feature-card svg{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.introduction .feature-section .feature-card h3{
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-weight: 500;
+
+
+}
+
+.introduction .feature-section .feature-card p{
+
+   
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #DDD;
+    font-size: 14px;
+
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .introduction_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction_bottom .photo img {
+        width:300px;
+        height: 300px;
+    }
+
+    
+}
+
+@media (max-width: 650px ){
+    .introduction_bottom .photo img {
+        width:100px;
+        height: 100px;
+    }
+
+}
+
+
+
+/*end Introduction*/
+
+/*start Selected Courses*/
+
+.Sel_Course{
+
+    background-image: linear-gradient(180deg, #545BE8, #272DB0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+
+}
+
+.Sel_Course .container .Sel_Course_Image{
+    padding-left: 150px;
+}
+.Sel_Course .container .Sel_Course_Image img{
+    margin: 100px;
+    width: 530px;
+    height: 538px;
+    
+    
+}
+
+
+.Sel_Course .container {
+    width: calc(100% - 120px);
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+
+}
+
+.Sel_Course .container .Sel_Course_Texts{
+    padding-left: 20px
+}
+
+.Sel_Course .container .Sel_Course_Texts h2{
+color:#F0C932;
+padding-bottom: 20px;
+font-size: 20px;
+}
+
+.Sel_Course .container .Sel_Course_Texts h1{
+    color:#FFF;
+    padding-bottom: 20px;
+    font-size: 40px;
+    }
+
+
+
+.Sel_Course .container .Sel_Course_Texts .paragraph p{
+    color: #DDD;
+}
+
+.Sel_Course .container .Sel_Course_Texts .stats {
+    display: flex;
+    margin-top: 20px;
+}
+
+.Sel_Course .container .Sel_Course_Texts .stat {
+    margin-right: 20px;
+    
+}
+
+.Sel_Course .container .Sel_Course_Texts .stat h4 {
+    margin: 0;
+    font-size: 24px;
+    color: #F0C932;
+}
+
+.Sel_Course .container .Sel_Course_Texts .stat p {
+    margin: 0;
+    font-size: 16px;
+    color:#DDD
+}
+
+
+
+
+
+@media (max-width: 1136px) {
+    .Sel_Course .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Sel_Course .container .Sel_Course_Texts  {
+        padding: 20px 0;
+    }
+
+    .Sel_Course .container .Sel_Course_Texts .stats {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 882px) {
+    .Sel_Course .container .Sel_Course_Image img{
+        width: 300px;
+        height: 330px;
+    }
+}
+
+
+/*end selected courses*/
+
+
+
+
+
+
+
+/*start Courses*/
+.courses .container {
+    width: calc(100% - 120px);
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    
+
+}
+
+.courses .container .course-items .course-card{
+    margin-right: 40px;
+    box-shadow: 0px 14.237px 8.237px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+
+.courses .container .course-items .course-card h2{
+padding-left: 10px;
+}
+
+.courses .container .course-items .course-card .course-stat .span-text {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between
+    }
+
+    .courses .container .course-items .course-card .course-stat .span-text span {
+        color: #969696;
+    }
+
+
+
+.courses .container .course-items .course-card .best-course {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between
+    }
+
+    .courses .container .course-items .course-card .best-course span{
+        font-weight: bolder;
+        color: #545BE8;
+        }
+
+
+
+.courses .container .course-items{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.courses .container .course-items img{
+    width:385px;
+    height: 300px;
+}
+
+
+.courses .container .course-description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.courses .container .course-description h2{
+    color: #141E32;
+    font-size: 30px;
+    padding-top: 20px;
+
+    
+}
+
+.courses .container .course-description span{
+    color: #545BE8;
+    font-weight: 400;
+    
+}
+
+.courses .container .course-description p{
+    color: #969696;
+    padding-top: 20px;
+    
+}
+
+
+
+
+
+.courses .container .course-description a {
+    
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+.courses .container .course-description a {
+    
+    background-color: var(--MainColor);
+    color: #fff;
+    font-weight: bolder;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/*end courses*/
 
 /*start tetimonials*/
 
@@ -185,6 +639,12 @@ color: #969696;
 }
 
 
+@media (max-width:700px) {
+    .testimonials .container .testimonial {
+        width: 100% 
+    }
+}
+
 
 /* start footer*/
 .footer {
@@ -275,8 +735,3 @@ color: #969696;
     gap: 7px;
 }
 
-@media(max-width:990px) {
-    .nav {
-        display: none;
-    }
-}
